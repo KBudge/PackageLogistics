@@ -1,0 +1,183 @@
+<html>
+<head>
+<title>main.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #7a7e85;}
+.s1 { color: #bcbec4;}
+.s2 { color: #cf8e6d;}
+.s3 { color: #bcbec4;}
+.s4 { color: #6aab73;}
+.s5 { color: #2aacb8;}
+.ln { color: #4b5059; font-weight: normal; font-style: normal; }
+</style>
+</head>
+<body bgcolor="#1e1f22">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+main.py</font>
+</center></td></tr></table>
+<pre><a name="l1"><span class="ln">1    </span></a><span class="s0"># Student Name: Kami Budge</span>
+<a name="l2"><span class="ln">2    </span></a><span class="s0"># Student ID: 0112487281</span>
+<a name="l3"><span class="ln">3    </span></a>
+<a name="l4"><span class="ln">4    </span></a><span class="s2">from </span><span class="s1">Truck </span><span class="s2">import </span><span class="s3">*</span>
+<a name="l5"><span class="ln">5    </span></a><span class="s2">from </span><span class="s1">interfaceFunctions </span><span class="s2">import </span><span class="s3">*</span>
+<a name="l6"><span class="ln">6    </span></a>
+<a name="l7"><span class="ln">7    </span></a><span class="s4">''' 
+<a name="l8"><span class="ln">8    </span></a>Citing Sources: 
+<a name="l9"><span class="ln">9    </span></a> 
+<a name="l10"><span class="ln">10   </span></a>C950 Recorded Webinars and Videos. WGU Course Search Resources.  
+<a name="l11"><span class="ln">11   </span></a>    Retrieved July 17, 2024, from 
+<a name="l12"><span class="ln">12   </span></a>    https://srm--c.vf.force.com/apex/CourseArticle?id=kA03x000000sp95CAA 
+<a name="l13"><span class="ln">13   </span></a> 
+<a name="l14"><span class="ln">14   </span></a>Ferdinand, Robert. (2024, July 13). InstructionsV2. C950 welcome email. 
+<a name="l15"><span class="ln">15   </span></a> 
+<a name="l16"><span class="ln">16   </span></a>Ferdinand, Robert.  Preliminary Steps for Project in C950 (3 videos). C950 welcome email. 
+<a name="l17"><span class="ln">17   </span></a>    Retrieved July 15, 2024, from 
+<a name="l18"><span class="ln">18   </span></a>    https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0be9e1a8-dffd-4661-ac05-b01c0104e30e 
+<a name="l19"><span class="ln">19   </span></a> 
+<a name="l20"><span class="ln">20   </span></a>Karimov, Elshad. (2024, June). The Complete Data Structures and Algorithms Course in Python. Udemy. 
+<a name="l21"><span class="ln">21   </span></a>    Retrieved July 18, 2024, from 
+<a name="l22"><span class="ln">22   </span></a>    https://wgu.udemy.com/course/data-structures-and-algorithms-bootcamp-in-python/learn/lecture/37856250#overview 
+<a name="l23"><span class="ln">23   </span></a> 
+<a name="l24"><span class="ln">24   </span></a>Lysecky, R., &amp; Vahid, F. (2022, August). C950: Data Structures and Algorithms II. zyBooks. 
+<a name="l25"><span class="ln">25   </span></a>    Retrieved June 22, 2024, from 
+<a name="l26"><span class="ln">26   </span></a>    https://learn.zybooks.com/zybook/WGUC950Template2023 
+<a name="l27"><span class="ln">27   </span></a> 
+<a name="l28"><span class="ln">28   </span></a>'''</span>
+<a name="l29"><span class="ln">29   </span></a>
+<a name="l30"><span class="ln">30   </span></a><span class="s0"># Function to print out data in hash table</span>
+<a name="l31"><span class="ln">31   </span></a><span class="s2">def </span><span class="s1">printHashTable</span><span class="s3">():</span>
+<a name="l32"><span class="ln">32   </span></a>    <span class="s1">i </span><span class="s3">= </span><span class="s5">1</span>
+<a name="l33"><span class="ln">33   </span></a>    <span class="s2">while </span><span class="s1">i </span><span class="s3">&lt;= </span><span class="s5">40</span><span class="s3">:</span>
+<a name="l34"><span class="ln">34   </span></a>        <span class="s1">print</span><span class="s3">(</span><span class="s1">packageHash</span><span class="s3">.</span><span class="s1">search</span><span class="s3">(</span><span class="s1">i</span><span class="s3">))</span>
+<a name="l35"><span class="ln">35   </span></a>        <span class="s1">i </span><span class="s3">+= </span><span class="s5">1</span>
+<a name="l36"><span class="ln">36   </span></a>
+<a name="l37"><span class="ln">37   </span></a><span class="s0"># Function to total up the miles of all trucks</span>
+<a name="l38"><span class="ln">38   </span></a><span class="s2">def </span><span class="s1">totalMiles</span><span class="s3">():</span>
+<a name="l39"><span class="ln">39   </span></a>    <span class="s1">total </span><span class="s3">= </span><span class="s1">round</span><span class="s3">(</span><span class="s1">truck1</span><span class="s3">.</span><span class="s1">totDistance </span><span class="s3">+ </span><span class="s1">truck2</span><span class="s3">.</span><span class="s1">totDistance </span><span class="s3">+ </span><span class="s1">truck3</span><span class="s3">.</span><span class="s1">totDistance</span><span class="s3">, </span><span class="s5">2</span><span class="s3">)</span>
+<a name="l40"><span class="ln">40   </span></a>    <span class="s2">return </span><span class="s1">total</span>
+<a name="l41"><span class="ln">41   </span></a>
+<a name="l42"><span class="ln">42   </span></a><span class="s0"># Calls function to retrieve data from package CSV file</span>
+<a name="l43"><span class="ln">43   </span></a><span class="s1">loadPackageData</span><span class="s3">(</span><span class="s4">&quot;CSV/packageCSV.csv&quot;</span><span class="s3">)</span>
+<a name="l44"><span class="ln">44   </span></a><span class="s1">loadDistanceData</span><span class="s3">(</span><span class="s4">&quot;CSV/distanceCSV.csv&quot;</span><span class="s3">)</span>
+<a name="l45"><span class="ln">45   </span></a><span class="s1">loadAddressData</span><span class="s3">(</span><span class="s4">&quot;CSV/addressCSV.csv&quot;</span><span class="s3">)</span>
+<a name="l46"><span class="ln">46   </span></a>
+<a name="l47"><span class="ln">47   </span></a><span class="s0"># List of packages for truck one</span>
+<a name="l48"><span class="ln">48   </span></a><span class="s1">packages1 </span><span class="s3">= [</span><span class="s5">13</span><span class="s3">, </span><span class="s5">14</span><span class="s3">, </span><span class="s5">15</span><span class="s3">, </span><span class="s5">16</span><span class="s3">, </span><span class="s5">19</span><span class="s3">, </span><span class="s5">20</span><span class="s3">, </span><span class="s5">21</span><span class="s3">, </span><span class="s5">34</span><span class="s3">, </span><span class="s5">39</span><span class="s3">, </span><span class="s5">1</span><span class="s3">, </span><span class="s5">4</span><span class="s3">, </span><span class="s5">40</span><span class="s3">, </span><span class="s5">8</span><span class="s3">, </span><span class="s5">30</span><span class="s3">, </span><span class="s5">37</span><span class="s3">]</span>
+<a name="l49"><span class="ln">49   </span></a><span class="s1">truck1 </span><span class="s3">= </span><span class="s1">Truck</span><span class="s3">(</span><span class="s5">1</span><span class="s3">, </span><span class="s1">packages1</span><span class="s3">, </span><span class="s5">8</span><span class="s3">, </span><span class="s5">0</span><span class="s3">)  </span><span class="s0"># Create truck1 object</span>
+<a name="l50"><span class="ln">50   </span></a><span class="s1">truck1</span><span class="s3">.</span><span class="s1">loadPackages</span><span class="s3">(</span><span class="s1">packages1</span><span class="s3">, </span><span class="s1">truck1</span><span class="s3">)                  </span><span class="s0"># Calls function to load packages onto truck 1</span>
+<a name="l51"><span class="ln">51   </span></a><span class="s1">delivering</span><span class="s3">(</span><span class="s1">truck1</span><span class="s3">)                                      </span><span class="s0"># Calls function to deliver packages from truck 1</span>
+<a name="l52"><span class="ln">52   </span></a>
+<a name="l53"><span class="ln">53   </span></a><span class="s0"># List of packages for truck two</span>
+<a name="l54"><span class="ln">54   </span></a><span class="s1">packages2 </span><span class="s3">= [</span><span class="s5">3</span><span class="s3">, </span><span class="s5">18</span><span class="s3">, </span><span class="s5">36</span><span class="s3">, </span><span class="s5">38</span><span class="s3">, </span><span class="s5">5</span><span class="s3">, </span><span class="s5">9</span><span class="s3">, </span><span class="s5">10</span><span class="s3">, </span><span class="s5">11</span><span class="s3">, </span><span class="s5">12</span><span class="s3">, </span><span class="s5">23</span><span class="s3">, </span><span class="s5">27</span><span class="s3">, </span><span class="s5">35</span><span class="s3">]</span>
+<a name="l55"><span class="ln">55   </span></a><span class="s1">truck2 </span><span class="s3">= </span><span class="s1">Truck</span><span class="s3">(</span><span class="s5">2</span><span class="s3">, </span><span class="s1">packages2</span><span class="s3">, </span><span class="s5">10</span><span class="s3">, </span><span class="s5">20</span><span class="s3">)</span><span class="s0"># Create truck2 object</span>
+<a name="l56"><span class="ln">56   </span></a><span class="s1">truck2</span><span class="s3">.</span><span class="s1">loadPackages</span><span class="s3">(</span><span class="s1">packages2</span><span class="s3">, </span><span class="s1">truck2</span><span class="s3">)                  </span><span class="s0"># Calls function to load packages onto truck 2</span>
+<a name="l57"><span class="ln">57   </span></a><span class="s1">print</span><span class="s3">(</span><span class="s1">packageHash</span><span class="s3">.</span><span class="s1">search</span><span class="s3">(</span><span class="s5">9</span><span class="s3">))</span>
+<a name="l58"><span class="ln">58   </span></a><span class="s1">update9 </span><span class="s3">= </span><span class="s1">packageHash</span><span class="s3">.</span><span class="s1">search</span><span class="s3">(</span><span class="s5">9</span><span class="s3">)         </span><span class="s0">#Get package 9 information</span>
+<a name="l59"><span class="ln">59   </span></a>
+<a name="l60"><span class="ln">60   </span></a><span class="s2">if </span><span class="s1">update9</span><span class="s3">.</span><span class="s1">loadTime </span><span class="s3">!= </span><span class="s4">'NONE'</span><span class="s3">:</span>
+<a name="l61"><span class="ln">61   </span></a>    <span class="s1">update9</span><span class="s3">.</span><span class="s1">address </span><span class="s3">= </span><span class="s4">'410 S State St'      </span><span class="s0">#Change package 9 address to correct address</span>
+<a name="l62"><span class="ln">62   </span></a>    <span class="s1">update9</span><span class="s3">.</span><span class="s1">city </span><span class="s3">= </span><span class="s4">'Salt Lake City'</span>
+<a name="l63"><span class="ln">63   </span></a>    <span class="s1">update9</span><span class="s3">.</span><span class="s1">state </span><span class="s3">= </span><span class="s4">'UT'</span>
+<a name="l64"><span class="ln">64   </span></a>    <span class="s1">update9</span><span class="s3">.</span><span class="s1">zip </span><span class="s3">= </span><span class="s4">'84111'</span>
+<a name="l65"><span class="ln">65   </span></a><span class="s1">print</span><span class="s3">(</span><span class="s1">packageHash</span><span class="s3">.</span><span class="s1">search</span><span class="s3">(</span><span class="s5">9</span><span class="s3">))</span>
+<a name="l66"><span class="ln">66   </span></a>
+<a name="l67"><span class="ln">67   </span></a><span class="s1">delivering</span><span class="s3">(</span><span class="s1">truck2</span><span class="s3">)                                      </span><span class="s0"># Calls function to deliver packages from truck 2</span>
+<a name="l68"><span class="ln">68   </span></a>
+<a name="l69"><span class="ln">69   </span></a><span class="s0"># List of packages for truck three</span>
+<a name="l70"><span class="ln">70   </span></a><span class="s1">packages3 </span><span class="s3">= [</span><span class="s5">6</span><span class="s3">, </span><span class="s5">25</span><span class="s3">, </span><span class="s5">26</span><span class="s3">, </span><span class="s5">31</span><span class="s3">, </span><span class="s5">32</span><span class="s3">, </span><span class="s5">7</span><span class="s3">, </span><span class="s5">29</span><span class="s3">, </span><span class="s5">17</span><span class="s3">, </span><span class="s5">28</span><span class="s3">, </span><span class="s5">2</span><span class="s3">, </span><span class="s5">33</span><span class="s3">, </span><span class="s5">24</span><span class="s3">, </span><span class="s5">22</span><span class="s3">]</span>
+<a name="l71"><span class="ln">71   </span></a><span class="s1">truck3 </span><span class="s3">= </span><span class="s1">Truck</span><span class="s3">(</span><span class="s5">3</span><span class="s3">, </span><span class="s1">packages3</span><span class="s3">, </span><span class="s5">9</span><span class="s3">, </span><span class="s5">5</span><span class="s3">)  </span><span class="s0"># Create truck3 object</span>
+<a name="l72"><span class="ln">72   </span></a><span class="s1">truck3</span><span class="s3">.</span><span class="s1">loadPackages</span><span class="s3">(</span><span class="s1">packages3</span><span class="s3">, </span><span class="s1">truck3</span><span class="s3">)                  </span><span class="s0"># Calls function to load packages onto truck 3</span>
+<a name="l73"><span class="ln">73   </span></a><span class="s1">delivering</span><span class="s3">(</span><span class="s1">truck3</span><span class="s3">)                                      </span><span class="s0"># Calls function to deliver packages from truck 3</span>
+<a name="l74"><span class="ln">74   </span></a>
+<a name="l75"><span class="ln">75   </span></a><span class="s0"># Begin User Interface</span>
+<a name="l76"><span class="ln">76   </span></a><span class="s2">class </span><span class="s1">main</span><span class="s3">:</span>
+<a name="l77"><span class="ln">77   </span></a>    <span class="s0"># Print interface menu</span>
+<a name="l78"><span class="ln">78   </span></a>    <span class="s1">print</span><span class="s3">(</span><span class="s4">&quot;</span><span class="s2">\n</span><span class="s4">Welcome to the interface for Western Governors University Parcel Service (WGUPS)</span><span class="s2">\n</span><span class="s4">&quot;</span><span class="s3">)</span>
+<a name="l79"><span class="ln">79   </span></a>    <span class="s1">print</span><span class="s3">(</span><span class="s4">&quot;MENU</span><span class="s2">\n</span><span class="s4">&quot;</span><span class="s3">)</span>
+<a name="l80"><span class="ln">80   </span></a>    <span class="s1">print</span><span class="s3">(</span><span class="s4">&quot;Please consider the following menu options carefully:&quot;</span><span class="s3">)</span>
+<a name="l81"><span class="ln">81   </span></a>    <span class="s1">print</span><span class="s3">(</span><span class="s4">&quot;****************************&quot;</span><span class="s3">)</span>
+<a name="l82"><span class="ln">82   </span></a>    <span class="s1">print</span><span class="s3">(</span><span class="s4">&quot;Enter '1' to print all the information of all packages and total miles traveled after deliveries are complete&quot;</span><span class="s3">)</span>
+<a name="l83"><span class="ln">83   </span></a>    <span class="s1">print</span><span class="s3">(</span><span class="s4">&quot;Enter '2' to print the status of ONE package at a certain time&quot;</span><span class="s3">)</span>
+<a name="l84"><span class="ln">84   </span></a>    <span class="s1">print</span><span class="s3">(</span><span class="s4">&quot;Enter '3' to print all the information of all packages at a certain time&quot;</span><span class="s3">)</span>
+<a name="l85"><span class="ln">85   </span></a>    <span class="s1">print</span><span class="s3">(</span><span class="s4">&quot;Enter '0' to exit menu&quot;</span><span class="s3">)</span>
+<a name="l86"><span class="ln">86   </span></a>    <span class="s1">print</span><span class="s3">(</span><span class="s4">&quot;****************************</span><span class="s2">\n</span><span class="s4">&quot;</span><span class="s3">)</span>
+<a name="l87"><span class="ln">87   </span></a>
+<a name="l88"><span class="ln">88   </span></a>    <span class="s1">quitStatus </span><span class="s3">= </span><span class="s2">True</span>
+<a name="l89"><span class="ln">89   </span></a>    <span class="s2">while </span><span class="s1">quitStatus </span><span class="s2">is True</span><span class="s3">:</span>
+<a name="l90"><span class="ln">90   </span></a>        <span class="s1">option </span><span class="s3">= </span><span class="s1">int</span><span class="s3">(</span><span class="s1">input</span><span class="s3">(</span><span class="s4">&quot;Enter Option Number here: &quot;</span><span class="s3">))   </span><span class="s0">#Ask user to pick menu option</span>
+<a name="l91"><span class="ln">91   </span></a>
+<a name="l92"><span class="ln">92   </span></a>        <span class="s2">if </span><span class="s1">option </span><span class="s3">== </span><span class="s5">1</span><span class="s3">:             </span><span class="s0">#If user picks option 1</span>
+<a name="l93"><span class="ln">93   </span></a>            <span class="s2">for </span><span class="s1">i </span><span class="s2">in </span><span class="s1">range</span><span class="s3">(</span><span class="s5">1</span><span class="s3">, </span><span class="s5">41</span><span class="s3">):  </span><span class="s0">#For every package in hash table, print info and delivery time</span>
+<a name="l94"><span class="ln">94   </span></a>                <span class="s1">package </span><span class="s3">= </span><span class="s1">packageHash</span><span class="s3">.</span><span class="s1">search</span><span class="s3">(</span><span class="s1">i</span><span class="s3">)</span>
+<a name="l95"><span class="ln">95   </span></a>                <span class="s1">pID </span><span class="s3">= </span><span class="s1">str</span><span class="s3">(</span><span class="s1">package</span><span class="s3">.</span><span class="s1">packageID</span><span class="s3">)</span>
+<a name="l96"><span class="ln">96   </span></a>                <span class="s1">pStatus </span><span class="s3">= </span><span class="s1">str</span><span class="s3">(</span><span class="s1">package</span><span class="s3">.</span><span class="s1">status</span><span class="s3">)</span>
+<a name="l97"><span class="ln">97   </span></a>                <span class="s1">pDelTime </span><span class="s3">= </span><span class="s1">str</span><span class="s3">(</span><span class="s1">package</span><span class="s3">.</span><span class="s1">deliveryTime</span><span class="s3">)</span>
+<a name="l98"><span class="ln">98   </span></a>
+<a name="l99"><span class="ln">99   </span></a>                <span class="s1">print</span><span class="s3">(</span><span class="s4">&quot;%s | %s, %s, %s, %s | %s kg | %s | Truck %s | %s | DELIVERED at %s&quot; </span><span class="s3">%(</span><span class="s1">pID</span><span class="s3">, </span><span class="s1">package</span><span class="s3">.</span><span class="s1">address</span><span class="s3">, </span><span class="s1">package</span><span class="s3">.</span><span class="s1">city</span><span class="s3">, </span><span class="s1">package</span><span class="s3">.</span><span class="s1">state</span><span class="s3">, </span><span class="s1">package</span><span class="s3">.</span><span class="s1">zip</span><span class="s3">, </span><span class="s1">package</span><span class="s3">.</span><span class="s1">weight</span><span class="s3">, </span><span class="s1">package</span><span class="s3">.</span><span class="s1">notes</span><span class="s3">, </span><span class="s1">package</span><span class="s3">.</span><span class="s1">truck</span><span class="s3">, </span><span class="s1">package</span><span class="s3">.</span><span class="s1">deadline</span><span class="s3">, </span><span class="s1">package</span><span class="s3">.</span><span class="s1">deliveryTime</span><span class="s3">))</span>
+<a name="l100"><span class="ln">100  </span></a>
+<a name="l101"><span class="ln">101  </span></a>            <span class="s0">#Prints total distance the trucks traveled</span>
+<a name="l102"><span class="ln">102  </span></a>            <span class="s1">print</span><span class="s3">(</span><span class="s4">&quot;</span><span class="s2">\n</span><span class="s4">Total distance all trucks traveled: &quot; </span><span class="s3">+ </span><span class="s1">str</span><span class="s3">(</span><span class="s1">totalMiles</span><span class="s3">()))</span>
+<a name="l103"><span class="ln">103  </span></a>            <span class="s1">quitStatus </span><span class="s3">= </span><span class="s2">False      </span><span class="s0">#Exits the program</span>
+<a name="l104"><span class="ln">104  </span></a>
+<a name="l105"><span class="ln">105  </span></a>        <span class="s2">elif </span><span class="s1">option </span><span class="s3">== </span><span class="s5">2</span><span class="s3">:       </span><span class="s0">#If user picks option 2</span>
+<a name="l106"><span class="ln">106  </span></a>            <span class="s1">inputHour </span><span class="s3">= </span><span class="s1">int</span><span class="s3">(</span><span class="s1">input</span><span class="s3">(</span><span class="s4">&quot;Enter hour from 0-23: &quot;</span><span class="s3">))     </span><span class="s0">#Asks user for an hour</span>
+<a name="l107"><span class="ln">107  </span></a>            <span class="s2">if </span><span class="s1">inputHour </span><span class="s2">not in </span><span class="s1">range</span><span class="s3">(</span><span class="s5">0</span><span class="s3">, </span><span class="s5">24</span><span class="s3">):       </span><span class="s0">#Exits program if input is out of range</span>
+<a name="l108"><span class="ln">108  </span></a>                <span class="s1">print</span><span class="s3">(</span><span class="s4">&quot;Invalid input, please run program again&quot;</span><span class="s3">)</span>
+<a name="l109"><span class="ln">109  </span></a>                <span class="s1">exit</span><span class="s3">()</span>
+<a name="l110"><span class="ln">110  </span></a>
+<a name="l111"><span class="ln">111  </span></a>            <span class="s1">inputMinute </span><span class="s3">= </span><span class="s1">int</span><span class="s3">(</span><span class="s1">input</span><span class="s3">(</span><span class="s4">&quot;Enter minute from 0-59: &quot;</span><span class="s3">)) </span><span class="s0">#Asks user for minute</span>
+<a name="l112"><span class="ln">112  </span></a>            <span class="s2">if </span><span class="s1">inputMinute </span><span class="s2">not in </span><span class="s1">range</span><span class="s3">(</span><span class="s5">0</span><span class="s3">, </span><span class="s5">60</span><span class="s3">):     </span><span class="s0">#Exits program if minute is not in range</span>
+<a name="l113"><span class="ln">113  </span></a>                <span class="s1">print</span><span class="s3">(</span><span class="s4">&quot;Invalid input, please run program again&quot;</span><span class="s3">)</span>
+<a name="l114"><span class="ln">114  </span></a>                <span class="s1">exit</span><span class="s3">()</span>
+<a name="l115"><span class="ln">115  </span></a>
+<a name="l116"><span class="ln">116  </span></a>            <span class="s1">inputPackage </span><span class="s3">= </span><span class="s1">int</span><span class="s3">(</span><span class="s1">input</span><span class="s3">(</span><span class="s4">&quot;Enter package number from 1-40: &quot;</span><span class="s3">)) </span><span class="s0">#Asks user for package number</span>
+<a name="l117"><span class="ln">117  </span></a>            <span class="s2">if </span><span class="s1">inputPackage </span><span class="s2">not in </span><span class="s1">range</span><span class="s3">(</span><span class="s5">1</span><span class="s3">, </span><span class="s5">41</span><span class="s3">):     </span><span class="s0">#Exits program if package number is not in range</span>
+<a name="l118"><span class="ln">118  </span></a>                <span class="s1">print</span><span class="s3">(</span><span class="s4">&quot;Invalid input, please run program again&quot;</span><span class="s3">)</span>
+<a name="l119"><span class="ln">119  </span></a>                <span class="s1">exit</span><span class="s3">()</span>
+<a name="l120"><span class="ln">120  </span></a>
+<a name="l121"><span class="ln">121  </span></a>            <span class="s1">time </span><span class="s3">= </span><span class="s1">inputTime</span><span class="s3">(</span><span class="s1">inputHour</span><span class="s3">, </span><span class="s1">inputMinute</span><span class="s3">)    </span><span class="s0">#Calls function to properly format the time</span>
+<a name="l122"><span class="ln">122  </span></a>            <span class="s0">#Specifies the time the user wants to know package status'</span>
+<a name="l123"><span class="ln">123  </span></a>            <span class="s1">print</span><span class="s3">(</span><span class="s4">&quot;All information for Package %s at %s:&quot; </span><span class="s3">%(</span><span class="s1">inputPackage</span><span class="s3">, </span><span class="s1">time</span><span class="s3">))</span>
+<a name="l124"><span class="ln">124  </span></a>            <span class="s0">#Prints a heading for user to know what details from the packages will be printing</span>
+<a name="l125"><span class="ln">125  </span></a>            <span class="s1">print</span><span class="s3">(</span><span class="s4">&quot;Package ID | Address, City, State, Zip Code | Weight | Notes | Deadline | Truck Number and Loaded Time | Status&quot;</span><span class="s3">)</span>
+<a name="l126"><span class="ln">126  </span></a>            <span class="s1">packageAtTime</span><span class="s3">(</span><span class="s1">inputPackage</span><span class="s3">, </span><span class="s1">time</span><span class="s3">)  </span><span class="s0">#Calls function to print one packages info at input time</span>
+<a name="l127"><span class="ln">127  </span></a>
+<a name="l128"><span class="ln">128  </span></a>            <span class="s1">quitStatus </span><span class="s3">= </span><span class="s2">False      </span><span class="s0">#Exits program</span>
+<a name="l129"><span class="ln">129  </span></a>
+<a name="l130"><span class="ln">130  </span></a>        <span class="s2">elif </span><span class="s1">option </span><span class="s3">== </span><span class="s5">3</span><span class="s3">:       </span><span class="s0">#If user picks option 3</span>
+<a name="l131"><span class="ln">131  </span></a>            <span class="s1">inputHour </span><span class="s3">= </span><span class="s1">int</span><span class="s3">(</span><span class="s1">input</span><span class="s3">(</span><span class="s4">&quot;Enter hour between 0-23: &quot;</span><span class="s3">))     </span><span class="s0">#Asks user for an hour</span>
+<a name="l132"><span class="ln">132  </span></a>            <span class="s2">if </span><span class="s1">inputHour </span><span class="s2">not in </span><span class="s1">range</span><span class="s3">(</span><span class="s5">0</span><span class="s3">, </span><span class="s5">24</span><span class="s3">):       </span><span class="s0">#Exits program if input is out of range</span>
+<a name="l133"><span class="ln">133  </span></a>                <span class="s1">print</span><span class="s3">(</span><span class="s4">&quot;Invalid input, please run program again&quot;</span><span class="s3">)</span>
+<a name="l134"><span class="ln">134  </span></a>                <span class="s1">exit</span><span class="s3">()</span>
+<a name="l135"><span class="ln">135  </span></a>
+<a name="l136"><span class="ln">136  </span></a>            <span class="s1">inputMinute </span><span class="s3">= </span><span class="s1">int</span><span class="s3">(</span><span class="s1">input</span><span class="s3">(</span><span class="s4">&quot;Enter minute between 0-59: &quot;</span><span class="s3">)) </span><span class="s0">#Asks user for minute</span>
+<a name="l137"><span class="ln">137  </span></a>            <span class="s2">if </span><span class="s1">inputMinute </span><span class="s2">not in </span><span class="s1">range</span><span class="s3">(</span><span class="s5">0</span><span class="s3">, </span><span class="s5">60</span><span class="s3">):     </span><span class="s0">#Exits program if minute is not in range</span>
+<a name="l138"><span class="ln">138  </span></a>                <span class="s1">print</span><span class="s3">(</span><span class="s4">&quot;Invalid input, please run program again&quot;</span><span class="s3">)</span>
+<a name="l139"><span class="ln">139  </span></a>                <span class="s1">exit</span><span class="s3">()</span>
+<a name="l140"><span class="ln">140  </span></a>
+<a name="l141"><span class="ln">141  </span></a>            <span class="s1">time </span><span class="s3">= </span><span class="s1">inputTime</span><span class="s3">(</span><span class="s1">inputHour</span><span class="s3">, </span><span class="s1">inputMinute</span><span class="s3">)    </span><span class="s0">#Properly formats the time</span>
+<a name="l142"><span class="ln">142  </span></a>            <span class="s0">#Specifies the time the user wants to know package status'</span>
+<a name="l143"><span class="ln">143  </span></a>            <span class="s1">print</span><span class="s3">(</span><span class="s4">&quot;All packages information at %s:&quot; </span><span class="s3">%</span><span class="s1">time</span><span class="s3">)</span>
+<a name="l144"><span class="ln">144  </span></a>            <span class="s0">#Prints a heading for user to know what details from the packages will be printing</span>
+<a name="l145"><span class="ln">145  </span></a>            <span class="s1">print</span><span class="s3">(</span><span class="s4">&quot;Package ID | Address, City, State, Zip Code | Weight | Notes | Deadline | Truck Number and Loaded Time | Status&quot;</span><span class="s3">)</span>
+<a name="l146"><span class="ln">146  </span></a>
+<a name="l147"><span class="ln">147  </span></a>            <span class="s0">#Loops through all packages</span>
+<a name="l148"><span class="ln">148  </span></a>            <span class="s2">for </span><span class="s1">i </span><span class="s2">in </span><span class="s1">range</span><span class="s3">(</span><span class="s5">1</span><span class="s3">, </span><span class="s5">41</span><span class="s3">):</span>
+<a name="l149"><span class="ln">149  </span></a>                <span class="s1">packageAtTime</span><span class="s3">(</span><span class="s1">i</span><span class="s3">, </span><span class="s1">time</span><span class="s3">)  </span><span class="s0">#Calls function from interface Functions</span>
+<a name="l150"><span class="ln">150  </span></a>
+<a name="l151"><span class="ln">151  </span></a>            <span class="s1">quitStatus </span><span class="s3">= </span><span class="s2">False      </span><span class="s0">#Exits program</span>
+<a name="l152"><span class="ln">152  </span></a>
+<a name="l153"><span class="ln">153  </span></a>        <span class="s2">elif </span><span class="s1">option </span><span class="s3">== </span><span class="s5">0</span><span class="s3">:           </span><span class="s0">#Exits program if user picks 0</span>
+<a name="l154"><span class="ln">154  </span></a>            <span class="s1">quitStatus </span><span class="s3">= </span><span class="s2">False      </span><span class="s0">#Exits program</span>
+<a name="l155"><span class="ln">155  </span></a>
+<a name="l156"><span class="ln">156  </span></a>        <span class="s0">#If user inputs anything except 0, 1, or 2, user will be prompted to make another choice</span>
+<a name="l157"><span class="ln">157  </span></a>        <span class="s2">else</span><span class="s3">:</span>
+<a name="l158"><span class="ln">158  </span></a>            <span class="s1">print</span><span class="s3">(</span><span class="s4">&quot;Invalid input, please try again&quot;</span><span class="s3">)</span>
+<a name="l159"><span class="ln">159  </span></a>
+<a name="l160"><span class="ln">160  </span></a>
+<a name="l161"><span class="ln">161  </span></a></pre>
+</body>
+</html>
