@@ -1,7 +1,3 @@
-'''
-Citing source:
-C950 - Webinar-1 - Let’s Go Hashing - Complete Python Code
-'''
 
 # HashTable class using chaining.
 class ChainingHashTable:
