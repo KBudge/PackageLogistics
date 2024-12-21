@@ -3,13 +3,6 @@ from CreateHashTable import *
 from Package import *
 from Truck import *
 
-'''
-Citing Sources: 
-Pretty Printed. (2017, September 11). Reading CSV Files in Python [Video]. YouTube. 
-    https://www.youtube.com/watch?v=efSjcrp87OY
-
-'''
-
 # Create empty hash table of package data
 packageHash = ChainingHashTable()
 
