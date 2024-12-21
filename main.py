@@ -1,31 +1,6 @@
-# Student Name: Kami Budge
-# Student ID: 0112487281
-
 from Truck import *
 from interfaceFunctions import *
 
-'''
-Citing Sources:
-
-C950 Recorded Webinars and Videos. WGU Course Search Resources. 
-    Retrieved July 17, 2024, from
-    https://srm--c.vf.force.com/apex/CourseArticle?id=kA03x000000sp95CAA
-
-Ferdinand, Robert. (2024, July 13). InstructionsV2. C950 welcome email.
-
-Ferdinand, Robert.  Preliminary Steps for Project in C950 (3 videos). C950 welcome email.
-    Retrieved July 15, 2024, from
-    https://wgu.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=0be9e1a8-dffd-4661-ac05-b01c0104e30e
-
-Karimov, Elshad. (2024, June). The Complete Data Structures and Algorithms Course in Python. Udemy.
-	Retrieved July 18, 2024, from
-    https://wgu.udemy.com/course/data-structures-and-algorithms-bootcamp-in-python/learn/lecture/37856250#overview
-
-Lysecky, R., & Vahid, F. (2022, August). C950: Data Structures and Algorithms II. zyBooks.
-    Retrieved June 22, 2024, from
-    https://learn.zybooks.com/zybook/WGUC950Template2023
-
-'''
 
 # Function to print out data in hash table
 def printHashTable():
