@@ -4,17 +4,6 @@ from Truck import *
 from loadCSVData import *
 from datetime import datetime, timedelta
 
-
-
-'''
-Citing Sources:
-
-C950 WGUPS Project Implementation Steps - Example - Nearest Neighbor. WGU Course Search Resources.
-	Retrieved July 22, 2024, from
-    https://srm--c.vf.force.com/apex/coursearticle?Id=kA03x000001DbBGCA0
-
-'''
-
 #Look up the index of an address
 def addressIndex(address):
     return addressData.index(address)
